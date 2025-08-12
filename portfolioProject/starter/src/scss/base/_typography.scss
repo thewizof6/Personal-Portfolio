@@ -1,0 +1,49 @@
+// base/_typography.scss
+
+
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
+@use '../blocks/cards' as *;
+
+.intro-container {
+    @include intro-box(44em, 15em);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.intro-button-container {
+    @include intro-box(44em, 8em);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+}
+
+.projects-button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 138em;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #212529;
+    color: #f8f9fa;
+  }
+  .intro-container {
+    background-color: $secondary-color;
+  }
+
+  .intro-button-container {
+    background-color: $secondary-color;
+  }
+
+  .projects-button-container {
+    background-color: #212529;
+  }
+}

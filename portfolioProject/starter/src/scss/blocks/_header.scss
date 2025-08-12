@@ -1,0 +1,103 @@
+// blocks/_headers.scss
+
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+@use '../utils/animations' as *;
+
+
+@supports (animation-timeline: scroll()) {
+
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 138em;
+        min-width: 40em;
+        position: sticky;
+        top: -1.5em;
+
+        &--animation {
+            animation: scale-and-add-shadow linear both;
+            animation-timeline: scroll();
+            animation-range: 0 300px;
+        }
+
+
+            &__bar {
+            @include header-footer;
+            background-color: $secondary-color;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            background-image: url(/starter/src/img/background.jpg);
+            background-size: cover;
+            
+            &--animation {
+                animation: move-and-fade-background linear both;
+                animation-timeline: scroll();
+                animation-range: 0 300px;
+            }
+        }
+
+        &__logo {
+            @include button(6.6em, 5.5em);
+            background-color: $primary-color;
+            margin: calc($spacing-unit * 0.5);;
+            border-radius: calc($spacing-unit * 1.5);
+
+            &--animation {
+                animation: scale-logo linear both;
+                animation-timeline: scroll();
+                animation-range: 0 300px;
+            }
+        }
+
+        &__menu {
+            border: none;
+            list-style-type: none;
+            display: flex;
+            flex-wrap: nowrap;
+            font-family: $primary-font;
+            margin-right: $spacing-unit;
+            padding-inline-start: calc($spacing-unit * 0.5);
+            
+            &--option {
+                @include button(4em, 2em); 
+                border: none;
+                background-color: transparent;
+                font-size: calc($primary-font-size * 1.6);
+                font-weight: bold;
+            }       
+        }
+    }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    .header--animation {
+        animation: add-shadow linear both;
+        animation-timeline: scroll();
+        animation-range: 0 300px;
+    }
+
+    .header__bar--animation {
+        animation: fade-background linear both;
+        animation-timeline: scroll();
+        animation-range: 0 300px;
+    }
+
+    .header__logo--animation {
+        animation: no-scale-logo linear both;
+        animation-timeline: scroll();
+        animation-range: 0 300px;
+    }
+}
+
+
+
+
+
+
+
+

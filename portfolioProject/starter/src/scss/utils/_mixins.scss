@@ -1,0 +1,35 @@
+// utils/_mixins.scss
+
+@use "variables" as *;
+
+
+@mixin header-footer {
+    width: 138em;
+    height: auto;
+    margin: calc($spacing-unit * 0.5);
+
+}
+
+@mixin intro-box ($wide, $tall) {
+    width: $wide;
+    height: $tall;
+    border: 1px dotted black;
+    margin: calc($spacing-unit * 0.5);
+}
+
+@mixin latest-box {
+    width: 33em;
+    height: 46em;
+    border: 1px dotted black;
+    margin: $spacing-unit;
+}
+
+@mixin button ($wide, $tall) {
+    width: $wide;
+    height: $tall;
+    border: 1px dotted black;
+    margin: calc($spacing-unit * 0.5);;
+    padding: 0;
+    font-size: calc($primary-font-size * 1.5);
+}
+

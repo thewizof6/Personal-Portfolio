@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="../dist/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <meta name="description" content="Darin Thompson's project portfolio">
+</head>
+
+<body id="body">
+  <header class="header header--animation">
+    <header class="header__bar header__bar--animation">
+      <img class="header__logo header__logo--animation" src="./img/cowboy_poet-logo.jpg" alt="Cowboy poet says: 'Ride hard, shoot straight, and speak the truth'" title="Ride hard, shoot straight, and speak the truth" />
+      <menu class="header__menu">
+        <li><button class="header__menu--option">
+          <a href="../src/Skills.doc">Skills</a>
+        </button></li>
+        <li><button class="header__menu--option">
+          <a href="../src/Projects.doc">Projects</a>
+        </button></li>
+        <li><button class="header__menu--option">
+          <a href="../src/Resume.doc">Resume</a>
+        </button></li>
+        <li><button class="header__menu--option">
+          <a href="../src/Contacts.doc">Contacts</a>
+        </button></li>
+      </menu>
+    </header>
+  </header>
+  <main id="main">
+    <section id="bio" class="bio">
+      <img class="bio__portrait" src="img/Darin.jpg" alt="Portrait of Darin"/>
+      <article class="bio__introduction">
+        <div class="intro-container">
+          <h1>Darin Thompson's Development Portfolio</h1>
+          <p>Adept communication systems engineer and military veteran with experience in communication operations, Quality (QA) engineering and management, technical support, and site reliability engineering.  Ensuring quality products and services is my primary focus.  Whether performing routine operational quality tests, verifying design and engineering quality, designing systems, or supporting customers to maintain promised Service Level Agreements (SLAs), I always strive to meet the highest standards of performance, usability, and service, satisfying both company and customer requirements.</p> 
+        </div>
+        <div class="intro-button-container">
+          <button class="buttons">Button 1</button>
+          <button class="buttons">Button 2</button>
+        </div>
+      </article> 
+    </section>
+    <section id="latest-projects" class="latest-projects">
+      <article class="latest-projects__project">
+        <h1>Lab Design Project</h1>
+        <p>Designed the layout and function of the QA and engineering labs, including the configuration of network switches and routers to optimize video over IP testing.  The equipment was racked in a modular fashion to support small test beds of four video services and scale up to 128 video services.  Test bed reconfiguration times decreased by more than 50%, significantly cutting down on labor and time costs associated with setup.  It increased the efficiency of lab usage, simplified network management, and allowed for future bandwidth upgrades.</p>
+        <img class="project-images" src="../src/img/lab.jpg" alt="image of video encoders in a test laboratory">
+      </article>
+      <article class="latest-projects__project">
+        <h1>Network Manager Testing Project</h1>
+        <p>Executed a detailed analysis of the network manager's performance at scale.  The goal was to assess its performance and robustness as the system scaled up.  Using device simulators to build test systems, a test matrix was created to cover every potential system configuration.  Redundant tests and configurations with insignificant results were identified and subsequently eliminated.  This process reduced the test matrix by 60%, saving time and providing more accurate information on the system’s scaling and processing limits for sales and publications.</p>
+        <img class="project-images" src="../src/img/laptop-nmx.jpg" alt="Image of laptop running the network manager">
+      </article>
+      <article class="latest-projects__project">
+        <h1>Portfolio Project</h1>
+        <p>This project is showcasing my ability to create responsive, accessible, and professional webpages.  It includes a responsive navigation bar that adapts seamlessly to screen sizes using Flexbox and incorporates smooth animations for a better user experience.  By meeting A and AA accessibility standards, this project ensures that all users, including those with disabilities, can access and navigate the website easily.  The outcome is a polished addition to my portfolio using skills acquired from Udacity’s Web Frontend Development course.</p>
+        <img class="project-images" src="../src/img/screenshot.jpg" alt="Screen capture of navigation menu">
+      </article>
+    </section>
+    <section class="projects-button-container">
+      <button class="project-buttons">
+        <a href="../src/Projects.doc" >Project List</a>
+      </button>
+    </section>
+  </main>
+  <footer class="footer">
+    <footer class="footer__bar">&copy; Darin Thompson 2025</footer>
+  </footer>
+</body>
+
+</html>

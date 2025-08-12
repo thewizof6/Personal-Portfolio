@@ -1,0 +1,31 @@
+// blocks/_footers.scss
+
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 138em;
+    height:12em;
+
+
+    &__bar {
+        @include header-footer;
+        background-color: $primary-color;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: $spacing-unit;
+        border: 1px dotted black;
+    }    
+}
+
+@media (prefers-color-scheme: dark) {
+    .footer__bar {
+        background-color: $secondary-color;
+    }
+}
+
+

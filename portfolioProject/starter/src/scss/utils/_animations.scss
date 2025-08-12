@@ -1,0 +1,47 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+
+//animation ideas provide by https://scroll-driven-animations.style/
+@keyframes scale-and-add-shadow {
+    100% {
+        box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .26);
+        scale: 0.9;
+    }
+}
+
+@keyframes add-shadow {
+    100% {
+        box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .26);
+    }
+}
+
+
+@keyframes move-and-fade-background {
+    100% {
+        translate: 0% -10%;
+        scale: 0.9;
+        opacity: 0.5;
+    }
+}
+
+@keyframes fade-background {
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes scale-logo {
+    50% {
+        scale: 0.8;
+    }
+    100%{
+        scale: 0.7;
+    }   
+}
+
+@keyframes no-scale-logo {
+    100% {
+        scale: 1;
+    }
+}

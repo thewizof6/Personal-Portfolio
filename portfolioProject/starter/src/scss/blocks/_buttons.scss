@@ -1,0 +1,44 @@
+// blocks/_buttons.scss
+
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+@use '../utils/animations' as *;
+
+
+.buttons {
+    @include button(18em, 4em);
+    background-color: $primary-button-color;
+    border-radius: $spacing-unit;
+
+    &:hover {
+    background-color: $secondary-button-color;
+    }
+}   
+
+.project-buttons {
+    @include button(22em, 5em);
+    background-color: $primary-button-color;
+    border-radius: $spacing-unit;
+
+    &:hover {
+    background-color: $secondary-button-color;
+    }
+}   
+
+@media (prefers-color-scheme: dark) {
+    .buttons {
+        background-color: $secondary-button-color;
+
+        &:hover {
+            background-color: $primary-button-color;
+        }
+    }
+
+    .project-buttons {
+        background-color: $secondary-button-color;
+
+        &:hover {
+        background-color: $primary-button-color;
+        }
+    }
+}
